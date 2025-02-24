@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    display: flex;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: white;
+    text-align: left;
+    justify-content: left;
+    margin:0;
+    top:0;
+    left:0;
+    width:100%;
+    position: fixed;
+    z-index: 2;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70%;
+}
+nav a:hover{
+    background-color: rgb(4, 45, 226);
+    color:white;
+}
+.navcontainer{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.navlinks{
+    margin-top: 20px;
+}
+#logo:hover{
+    background-color: white;
+}
+main{
+    margin: 40px;
+}
+.button1{
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+#button2, #button3, #button4, #button7, #button1{
+    background-color: rgb(4, 45, 226);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 60%;
+}
+#button2:hover, #button3:hover, #button4:hover, #button7:hover, #button1:hover{
+    box-shadow: 0 0 10px #888888;
+}
+.grid1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap:70px;
+    margin-top: 20%;
+    width:100%;
+}
+#image2, #author{
+    box-shadow: 5px 5px 10px #888888;
+}
+.social{
+    text-decoration: none;
+}
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin-left: 7%;
+    width:60%;
+}
+#authorcontent{
+    width:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.wholecontainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.outerbackend{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17%;
+    width:60%;
+    gap:50px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.outerfrontend{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18%;
+    width:60%;
+    gap:30px;
+}
+.innerbackend, .innerfrontend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+#back3, #authorcontent, #front3{
+    text-align:justify;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw; 
+    justify-content: center;
+    align-items: center;
+  
+}
+#block1{
+    background-color: rgb(4, 45, 226);
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    min-height: 30vh;
+}
+#block2,#block3{
+    background-color: rgb(249, 249, 249);
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    min-height: 30vh;
+}
+#block4{
+    background-color:rgb(37, 36, 36);
+    color: rgb(255, 255, 255);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    min-height: 30vh;
+}
+#button5{
+    background-color: rgb(249, 249, 249);
+    color: black;
+    border: 0;
+    padding:15px;
+    font-size: 60%;
+}
+#button6{
+    background-color:rgb(37, 36, 36);
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding:15px;
+    font-size: 60%;
+}
+.swapboxContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.swapbox{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgb(101, 101, 101);
+
+}
+.grid3{
+    justify-content: center;
+    align-items: center;
+}
+#swapbox2{
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+.touch{
+    display: flex;
+    justify-content: flex-start;
+    gap:40px;
+}
+#getin{
+   float: left;
+   justify-content: left;
+  text-align: left;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    justify-content: flex-start;
+    gap:20px;
+}
+#social2{
+    margin-top: 20px;
+}
+@media (max-width:768px){
+    .grid1, .aboutme, .services, .grid3, .swapboxContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .swapboxContainer{
+      margin:10%;
+    }
+    #block4{
+        padding:57px;
+    }
+}
