@@ -82,8 +82,8 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:40px;
-    margin-left: 7%;
+    gap:30px;
+    
     width:60%;
 }
 #authorcontent{
@@ -105,7 +105,7 @@ main{
     align-items: center;
     margin-left: 17%;
     width:60%;
-    gap:50px;
+    gap:20px;
 }
 .services{
     display: flex;
@@ -236,5 +236,11 @@ main{
     }
     #block4{
         padding:57px;
+    }
+    .outerbackend, .outerfrontend{
+        margin-left: 0;
+    }
+    #back1{
+        width:350px;
     }
 }
